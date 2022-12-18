@@ -1,25 +1,28 @@
-*.class
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
-# Package Files #
-*.jar
-*.war
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
 
-# gwt caches and compiled units #
-war/gwt_bree/
-gwt-unitCache/
+# testing
+/coverage
 
-# boilerplate generated classes #
-.apt_generated/
+# production
+/build
 
-# more caches and things from deploy #
-war/WEB-INF/deploy/
-war/WEB-INF/classes/
+# misc
+.DS_Store
+.env.local
+.env.development.
+.env.development.local
+.env.test.local
+.env.production.local
 
-#compilation logs
-.gwt/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-#gwt junit compilation files
-www-test/
+/.idea
 
-#old GWT (1.5) created this dir
-.gwt-tmp/
+package.lock
